@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бронирование номера</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>ComfortStay</h1>
+    <p>Ваш идеальный отдых начинается здесь</p>
+  </header>
+
+  <main class="container">
+    <h2>Бронирование номера: <span id="selectedRoomInfo">Не выбран</span></h2>
+    <form id="bookingForm" class="booking-form">
+      <label>Имя: <input type="text" id="firstName" required placeholder="Иван"></label>
+      <label>Фамилия: <input type="text" id="lastName" required placeholder="Иванов"></label>
+      <label>Телефон: <input type="text" id="phone" required placeholder="+7(999)123-45-67"></label>
+      <label>E-mail: <input type="email" id="email" required placeholder="example@mail.ru"></label>
+      <label>Дата заезда: <input type="text" id="checkIn" required placeholder="ДД:ММ:ГГГГ"></label>
+      <label>Дата выезда: <input type="text" id="checkOut" required placeholder="ДД:ММ:ГГГГ"></label>
+      <button type="submit">Отправить заявку</button>
+    </form>
+    <div id="successMessage" class="success-msg" style="display:none;">✅ Заявка успешно отправлена!</div>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Адрес:</strong> г. Москва, ул. Примерная, 10</p>
+    <p><strong>Режим работы:</strong> Круглосуточно (24/7)</p>
+    <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
+    <p><strong>E-mail:</strong> info@comfortstay.ru</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
