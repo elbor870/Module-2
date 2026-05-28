@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог номеров</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>ComfortStay</h1>
+    <p>Ваш идеальный отдых начинается здесь</p>
+  </header>
+
+  <main class="container">
+    <section class="filters">
+      <h3>Фильтр по категориям</h3>
+      <label><input type="checkbox" name="category" value="standard"> Стандарт</label>
+      <label><input type="checkbox" name="category" value="comfort"> Комфорт</label>
+      <label><input type="checkbox" name="category" value="lux"> Люкс</label>
+      <div class="filter-buttons">
+        <button id="applyFilter">Применить</button>
+        <button id="resetFilter">Сбросить фильтр</button>
+      </div>
+    </section>
+
+    <section class="rooms-grid" id="roomContainer">
+      <!-- Номера рендерятся через JS -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p><strong>Адрес:</strong> г. Москва, ул. Примерная, 10</p>
+    <p><strong>Режим работы:</strong> Круглосуточно (24/7)</p>
+    <p><strong>Телефон:</strong> +7 (495) 123-45-67</p>
+    <p><strong>E-mail:</strong> info@comfortstay.ru</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
